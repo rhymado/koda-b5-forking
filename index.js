@@ -205,11 +205,4 @@ import adit from "./tasks/adit/index.js";
   } catch (error) {
     console.log(error.message);
   }
-  // Failed
-  try {
-    const akarSalah = adit.celciusToFahrenheit("25");
-    console.log(akarSalah);
-  } catch (error) {
-    console.log(error.message);
-  }
 })();
