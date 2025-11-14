@@ -169,4 +169,11 @@ import wibi from "./tasks/wibi/index.js";
   } catch (error) {
     console.log(error.message);
   }
+
+  try {
+    const changes = wibi.findTheCapitals("NugRAHa PanCa WIBISANA");
+    console.log(changes);
+  } catch (error) {
+    console.log(error.message);
+  }
 })();
