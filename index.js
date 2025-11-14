@@ -168,3 +168,12 @@ import rahman from "./tasks/rahman/src/index.js";
     console.log(error.message);
   }
 })();
+
+(function taskRahman2() {
+  try {
+    const convertRp = rahman.convertDollarToRupiah(100);
+    console.log(convertRp);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
