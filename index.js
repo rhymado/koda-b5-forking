@@ -74,7 +74,38 @@ import hilmy from "./tasks/hilmy/index.js";
 
 })(); 
 
-// import your tasks here and run
+/**
+ * Task "Ari Ramadhan"
+ */
+
+import ari from "./tasks/ari/index.js";
+
+// Use IIFE here
+(function taskAri() {
+  // Convert roman to integer
+  // Success
+  try {
+    const romanToInt = ari.romanToInteger();
+    romanToInt;
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
+
+/**
+ * Task "Virgil"
+ */
+
+import virgil from "./tasks/virgil/index.js";
+
+(function taskVirgil() {
+  try {
+    const calculate = virgil.calcTotal(["apel", "pisang", "apel"]);
+    console.log(calculate);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
 
 // Task Bian
 import bian from "./tasks/bian/index.js";
@@ -86,3 +117,18 @@ import bian from "./tasks/bian/index.js";
     console.log(error.message);
   }
 })();
+/**
+ * Task Ghifar
+ */
+import ghifar from "./tasks/ghifar/index.js";
+
+(async function taskGhifar() {
+  try {
+    const cekOngkir = await ghifar.cekOngkir();
+    console.log(cekOngkir);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
+
+
