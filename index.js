@@ -2,7 +2,7 @@
  * Task Fakhri
  */
 
-import fakhri from './tasks/fakhri/index.js';
+import fakhri from "./tasks/fakhri/index.js";
 
 // Use IIFE here
 (function taskFakhri() {
@@ -16,7 +16,7 @@ import fakhri from './tasks/fakhri/index.js';
   }
   // Failed
   try {
-    const fahrenheit = fakhri.celciusToFahrenheit('10', 30);
+    const fahrenheit = fakhri.celciusToFahrenheit("10", 30);
     console.log(fahrenheit);
   } catch (error) {
     console.log(error.message);
@@ -31,7 +31,7 @@ import fakhri from './tasks/fakhri/index.js';
   }
   // Failed
   try {
-    const changes = fakhri.cashier('250_000', '375_000');
+    const changes = fakhri.cashier("250_000", "375_000");
     console.log(changes);
   } catch (error) {
     console.log(error.message);
@@ -42,7 +42,7 @@ import fakhri from './tasks/fakhri/index.js';
  * Task "Person Hilmy"
  */
 
-import hilmy from './tasks/hilmy/index.js';
+import hilmy from "./tasks/hilmy/index.js";
 (function taskHilmy() {
   try {
     const resultJumlah = hilmy.jumlah(5, 10);
@@ -77,7 +77,7 @@ import hilmy from './tasks/hilmy/index.js';
  * Task "Ari Ramadhan"
  */
 
-import ari from './tasks/ari/index.js';
+import ari from "./tasks/ari/index.js";
 
 // Use IIFE here
 (function taskAri() {
@@ -103,23 +103,23 @@ import ari from './tasks/ari/index.js';
  * Task "Virgil"
  */
 
-import virgil from './tasks/virgil/index.js';
+import virgil from "./tasks/virgil/index.js";
 
 (function taskVirgil() {
   try {
-    const calculate = virgil.calcTotal(['apel', 'pisang', 'apel']);
+    const calculate = virgil.calcTotal(["apel", "pisang", "apel"]);
     console.log(calculate);
   } catch (error) {
     console.log(error.message);
   }
   try {
-    const calculate = virgil.countLetters('virgil');
+    const calculate = virgil.countLetters("virgil");
     console.log(calculate);
   } catch (error) {
     console.log(error.message);
   }
   try {
-    const calculate = virgil.countLetters('virgil');
+    const calculate = virgil.countLetters("virgil");
     console.log(calculate);
   } catch (error) {
     console.log(error.message);
@@ -127,11 +127,11 @@ import virgil from './tasks/virgil/index.js';
 })();
 
 // Task Bian
-import bian from './tasks/bian/index.js';
+import bian from "./tasks/bian/index.js";
 
 (function taskBian() {
   try {
-    console.log(bian.minutesToHours(180), 'Jam');
+    console.log(bian.minutesToHours(180), "Jam");
   } catch (error) {
     console.log(error.message);
   }
@@ -151,7 +151,7 @@ import bian from './tasks/bian/index.js';
 /**
  * Task Ghifar
  */
-import ghifar from './tasks/ghifar/index.js';
+import ghifar from "./tasks/ghifar/index.js";
 
 (async function taskGhifar() {
   try {
@@ -172,11 +172,11 @@ import ghifar from './tasks/ghifar/index.js';
  */
 
 // import your tasks here and run
-import wibi from './tasks/wibi/index.js';
+import wibi from "./tasks/wibi/index.js";
 
 (function taskWibi() {
   try {
-    const changes = wibi.sumAllArray(1, 2, 3, 4, '5', [1, 2, 3]);
+    const changes = wibi.sumAllArray(1, 2, 3, 4, "5", [1, 2, 3]);
     console.log(changes);
   } catch (error) {
     console.log(error.message);
@@ -188,7 +188,7 @@ import wibi from './tasks/wibi/index.js';
  */
 
 // import your tasks here and run
-import adit from './tasks/adit/index.js';
+import adit from "./tasks/adit/index.js";
 
 (function taksAdit() {
   // square-root
@@ -200,7 +200,7 @@ import adit from './tasks/adit/index.js';
   }
   // Failed
   try {
-    const akarSalah = adit.celciusToFahrenheit('25');
+    const akarSalah = adit.celciusToFahrenheit("25");
     console.log(akarSalah);
   } catch (error) {
     console.log(error.message);
