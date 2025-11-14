@@ -3,7 +3,6 @@
  */
 
 import fakhri from "./tasks/fakhri/index.js";
-import hilmy from "./tasks/hilmy/index.js";
 
 // Use IIFE here
 (function taskFakhri() {
@@ -40,9 +39,10 @@ import hilmy from "./tasks/hilmy/index.js";
 })();
 
 /**
- * Task "Person Name"
+ * Task "Person Hilmy"
  */
-// Task hilmy
+
+import hilmy from "./tasks/hilmy/index.js";
 (function taskHilmy() {
   try {
     const resultJumlah = hilmy.jumlah(5, 10);
@@ -58,7 +58,5 @@ import hilmy from "./tasks/hilmy/index.js";
     console.log(error.message);
   }
 })(); 
-
-
 
 // import your tasks here and run

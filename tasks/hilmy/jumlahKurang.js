@@ -1,3 +1,7 @@
+// jumlah dan kurang
+// jumlah = a + b
+// kurang = a - b
+
 export function jumlah(a, b) {
     return a + b;
 }
