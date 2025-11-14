@@ -1,4 +1,4 @@
-import { createInterface, Readline } from "node:readline/promises";
+import { createInterface } from "node:readline/promises";
 
 const rl = createInterface({
   input: process.stdin,
@@ -15,7 +15,7 @@ const arrRoman = {
   M: 1000,
 };
 
-async function romanToInteger() {
+export async function romanToInteger() {
   try {
     const inputRoman = await rl.question(
       "Input roman number (I, V, X, L, C, D, M) : "
@@ -46,4 +46,4 @@ async function romanToInteger() {
   }
 }
 
-romanToInteger();
+// romanToInteger();
