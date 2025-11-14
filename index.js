@@ -77,7 +77,20 @@ import ari from "./tasks/ari/index.js";
   }
 })();
 
-// import your tasks here and run
+/**
+ * Task "Virgil"
+ */
+
+import virgil from "./tasks/virgil/index.js";
+
+(function taskVirgil() {
+  try {
+    const calculate = virgil.calcTotal(["apel", "pisang", "apel"]);
+    console.log(calculate);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
 
 // Task Bian
 import bian from "./tasks/bian/index.js";
