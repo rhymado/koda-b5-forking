@@ -4,7 +4,7 @@ const fruits = [
   { name: "jeruk", price: 4000 },
 ];
 
-const calcTotal = (items) => {
+export const calcTotal = (items) => {
   let total = 0;
 
   // loop daftar belanja
@@ -21,9 +21,3 @@ const calcTotal = (items) => {
 
   return total;
 };
-
-export const belanja = ["apel", "pisang", "apel"];
-
-console.log(calcTotal(belanja));
-
-export default calcTotal;
