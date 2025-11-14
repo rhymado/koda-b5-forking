@@ -154,7 +154,7 @@ import wibi from "./tasks/wibi/index.js";
 })();
 
 /*
- * Task "Nugraha Panca Wibisana"
+ * Task "M. Fadhlul Rahman P"
  */
 
 // import your tasks here and run
