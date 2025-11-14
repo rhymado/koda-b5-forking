@@ -57,7 +57,25 @@ import hilmy from "./tasks/hilmy/index.js";
   } catch (error) {
     console.log(error.message);
   }
-})(); 
+})();
+
+/**
+ * Task "Ari Ramadhan"
+ */
+
+import ari from "./tasks/ari/index.js";
+
+// Use IIFE here
+(function taskAri() {
+  // Convert roman to integer
+  // Success
+  try {
+    const romanToInt = ari.romanToInteger();
+    romanToInt;
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
 
 // import your tasks here and run
 
