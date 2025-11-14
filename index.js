@@ -206,3 +206,15 @@ import adit from "./tasks/adit/index.js";
     console.log(error.message);
   }
 })();
+
+import aska from "./tasks/aska/index.js"
+(async function taskAska(){
+try{
+  const pembagian =await aska.bagiTeam(12)
+  console.log(pembagian);
+  
+}catch(error){
+  console.log(error);
+  
+}
+})()
