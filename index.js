@@ -116,4 +116,18 @@ import ghifar from "./tasks/ghifar/index.js";
   }
 })();
 
+/*
+ * Task "Nugraha Panca Wibisana"
+ */
 
+// import your tasks here and run
+import wibi from "./tasks/wibi/index.js";
+
+(function taskWibi() {
+  try {
+    const changes = wibi.sumAllArray(1, 2, 3, 4, "5", [1, 2, 3]);
+    console.log(changes);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
