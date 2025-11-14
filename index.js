@@ -241,4 +241,13 @@ import aska from "./tasks/aska/index.js";
   } catch (error) {
     console.log(error);
   }
+
+  try {
+    const pembagian = await aska.pembagian(10);
+    console.log(pembagian);
+  } catch (error) {
+    console.log(error);
+  }
+
+  
 })();
