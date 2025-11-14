@@ -90,6 +90,14 @@ import ari from "./tasks/ari/index.js";
   } catch (error) {
     console.log(error.message);
   }
+  // Convert roman to integer
+  // Success
+  try {
+    const checkPalindrom = ari.checkPalindrom();
+    checkPalindrom;
+  } catch (error) {
+    console.log(error.message);
+  }
 })();
 
 /**
