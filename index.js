@@ -57,7 +57,22 @@ import hilmy from "./tasks/hilmy/index.js";
   } catch (error) {
     console.log(error.message);
   }
-})();
+
+  try {
+    const resultKali = hilmy.kali(4, 5);
+    console.log(resultKali);
+  } catch (error) {
+    console.log(error.message);
+  }
+
+  try {
+    const resultBagi = hilmy.bagi(20, 4);
+    console.log(resultBagi);
+  } catch (error) {
+    console.log(error.message);
+  }
+
+})(); 
 
 /**
  * Task "Ari Ramadhan"
@@ -90,6 +105,12 @@ import virgil from "./tasks/virgil/index.js";
   } catch (error) {
     console.log(error.message);
   }
+  try {
+    const calculate = virgil.countLetters("virgil");
+    console.log(calculate);
+  } catch (error) {
+    console.log(error.message);
+  }
 })();
 
 // Task Bian
@@ -116,4 +137,18 @@ import ghifar from "./tasks/ghifar/index.js";
   }
 })();
 
+/*
+ * Task "Nugraha Panca Wibisana"
+ */
 
+// import your tasks here and run
+import wibi from "./tasks/wibi/index.js";
+
+(function taskWibi() {
+  try {
+    const changes = wibi.sumAllArray(1, 2, 3, 4, "5", [1, 2, 3]);
+    console.log(changes);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
