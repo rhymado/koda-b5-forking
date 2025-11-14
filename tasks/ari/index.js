@@ -1,4 +1,4 @@
-import { arrRoman, romanToInteger } from "./romanToInteger.js";
+import { romanToInteger } from "./romanToInteger.js";
 
 const func = {
   romanToInteger,
