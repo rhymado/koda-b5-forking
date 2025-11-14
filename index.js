@@ -118,6 +118,12 @@ import virgil from "./tasks/virgil/index.js";
   } catch (error) {
     console.log(error.message);
   }
+  try {
+    const calculate = virgil.countLetters("virgil");
+    console.log(calculate);
+  } catch (error) {
+    console.log(error.message);
+  }
 })();
 
 // Task Bian
@@ -130,7 +136,13 @@ import bian from "./tasks/bian/index.js";
     console.log(error.message);
   }
 
-   try {
+  try {
+    console.log(bian.squareArea(20));
+  } catch (error) {
+    console.log(error.message);
+  }
+
+  try {
     console.log(bian.squareArea(20));
   } catch (error) {
     console.log(error.message);
@@ -173,6 +185,23 @@ import wibi from "./tasks/wibi/index.js";
   try {
     const changes = wibi.findTheCapitals("NugRAHa PanCa WIBISANA");
     console.log(changes);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
+
+/**
+ * Task "adit"
+ */
+
+// import your tasks here and run
+import adit from "./tasks/adit/index.js";
+
+(function taksAdit() {
+  // square-root
+  try {
+    const akar = adit.squareRoot(25);
+    console.log(akar);
   } catch (error) {
     console.log(error.message);
   }
