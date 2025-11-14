@@ -152,3 +152,19 @@ import wibi from "./tasks/wibi/index.js";
     console.log(error.message);
   }
 })();
+
+/*
+ * Task "Nugraha Panca Wibisana"
+ */
+
+// import your tasks here and run
+import rahman from "./tasks/rahman/src/index.js";
+
+(function taskRahman() {
+  try {
+    const convertRp = rahman.convertRupiahToDollar(100000);
+    console.log(convertRp);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
