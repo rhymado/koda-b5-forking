@@ -208,7 +208,7 @@ import adit from "./tasks/adit/index.js";
 })();
 
 /*
- * Task "Nugraha Panca Wibisana"
+ * Task "Aska Diliyan Perkasa"
  */
 
 // import your tasks here and run
