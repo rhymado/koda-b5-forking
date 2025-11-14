@@ -1,1 +1,3 @@
-console.log("Hello World");
+import { rl, guessNumber } from "./src/guessNumber.js";
+
+guessNumber(rl);
