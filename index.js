@@ -39,9 +39,48 @@ import fakhri from "./tasks/fakhri/index.js";
 })();
 
 /**
- * Task "Virgil I Ambar"
+ * Task "Person Hilmy"
  */
 
-import { calcTotal, belanja } from "./tasks/virgil/calculateAllPrice.js";
+import hilmy from "./tasks/hilmy/index.js";
+(function taskHilmy() {
+  try {
+    const resultJumlah = hilmy.jumlah(5, 10);
+    console.log(resultJumlah);
+  } catch (error) {
+    console.log(error.message);
+  }
 
-calcTotal(belanja);
+  try {
+    const resultKurang = hilmy.kurang(15, 5);
+    console.log(resultKurang);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
+
+/**
+ * Task "Virgil"
+ */
+
+import virgil from "./tasks/virgil/index.js";
+
+(function taskVirgil() {
+  try {
+    const calculate = virgil.calcTotal(["apel", "pisang", "apel"]);
+    console.log(calculate);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
+
+// Task Bian
+import bian from "./tasks/bian/index.js";
+
+(function taskBian() {
+  try {
+    console.log(bian.minutesToHours(180), "Jam");
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
