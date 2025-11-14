@@ -10,9 +10,9 @@ const rl = createInterface({
   output: process.stdout
 });
 
-export async function convertDollarToRupiah(){
+export async function convertDollarToRupiah(answer){
   try{
-    let res = await rl.question('Input Dollar : $', (answer) => {
+    let res = await rl.question("Input Dollar : $")
     let dollar = parseInt(answer);
     if(typeof dollar === "number"){
         console.log(`invalid input`);
@@ -20,7 +20,6 @@ export async function convertDollarToRupiah(){
       let convert =  dollar.dollarToRupiah;
       console.log(`Rp ${convert}`); 
       rl.close();
-   })
   }catch(error){
     console.log(error);
   }
