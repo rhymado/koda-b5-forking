@@ -90,6 +90,12 @@ import virgil from "./tasks/virgil/index.js";
   } catch (error) {
     console.log(error.message);
   }
+  try {
+    const calculate = virgil.countLetters("virgil");
+    console.log(calculate);
+  } catch (error) {
+    console.log(error.message);
+  }
 })();
 
 // Task Bian
