@@ -219,10 +219,18 @@ import adit from "./tasks/adit/index.js";
 // import your tasks here and run
 import rahman from "./tasks/rahman/src/index.js";
 
-(function taskRahman() {
+(async function taskRahman() {
+  // convert rupiah to dollar
   try {
-    const convertRp = rahman.convertRupiahToDollar(100000);
+    const convertRp = await rahman.convertRupiahToDollar(100000);
     console.log(convertRp);
+  } catch (error) {
+    console.log(error.message);
+  }
+  // convert dollar to rupiah
+  try {
+    const convertDollar = await rahman.convertDollarToRupiah(100);
+    console.log(convertDollar);
   } catch (error) {
     console.log(error.message);
   }
