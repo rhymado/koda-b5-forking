@@ -45,8 +45,8 @@ import fakhri from "./tasks/fakhri/index.js";
 import  ghifar  from "./tasks/ghifar/index.js";
 try{
   const cekOngkir = await ghifar.cekOngkir();
-  console.log(cekOngkir)
+  console.log(cekOngkir);
 }catch(error){
-  console.log(error)
+  console.log(error);
 }
 

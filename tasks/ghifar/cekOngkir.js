@@ -6,24 +6,24 @@ const rl = createInterface({
 export async function cekOngkir() {
   try {
     const kendaraan = await rl.question("mau naik apa ? (A: mobil B: motor) ");
-    let inputKendaraan = kendaraan.toLowerCase();
+    const inputKendaraan = kendaraan.toLowerCase();
     if (inputKendaraan !== "a" && inputKendaraan !== "b") {
       throw new Error("*input tidak sesuai");
     }
     const inputjarak = await rl.question("berapa kilometer(km) ? ");
-    let jarak = parseInt(inputjarak);
+    const jarak = parseInt(inputjarak);
     switch (inputKendaraan) {
       case "a":
-        let mobil = jarak * 5e3;
+        const mobil = jarak * 5e3;
         return `ongkir mobil: Rp.${mobil}`;
         break;
       case "b":
-        let motor = jarak * 3e3;
+        const motor = jarak * 3e3;
         return`ongkir motor: Rp.${motor}`;
         break;
     }
   } catch (error) {
-    return error
+    return error;
   } finally {
     rl.close();
   }
