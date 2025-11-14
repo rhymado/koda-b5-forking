@@ -1,22 +1,8 @@
-function jumlah(a, b) {
-    return a + b;
-}
+import { jumlah, kurang } from "./jumlahKurang.js";
 
-function kali(a, b) {
-    return a * b;
-}
+const func = {
+    jumlah,
+    kurang,
+};
 
-function bagi(a, b) {
-    return a / b;
-}
-
-function kurang(a, b) {
-    return a - b;
-}
-
-jumlah(5, 10);
-kali(4, 3);
-bagi(20, 4);
-kurang(15, 5);
-
-
+export default func;
