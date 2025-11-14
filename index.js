@@ -59,6 +59,10 @@ import hilmy from "./tasks/hilmy/index.js";
   }
 })();
 
+/**
+ * Task "Ari Ramadhan"
+ */
+
 import ari from "./tasks/ari/index.js";
 
 // Use IIFE here
