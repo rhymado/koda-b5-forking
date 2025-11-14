@@ -3,7 +3,6 @@
  */
 
 import fakhri from './tasks/fakhri/index.js';
-import adit from './tasks/adit/index.js';
 
 // Use IIFE here
 (function taskFakhri() {
@@ -58,6 +57,20 @@ import hilmy from './tasks/hilmy/index.js';
   } catch (error) {
     console.log(error.message);
   }
+
+  try {
+    const resultKali = hilmy.kali(4, 5);
+    console.log(resultKali);
+  } catch (error) {
+    console.log(error.message);
+  }
+
+  try {
+    const resultBagi = hilmy.bagi(20, 4);
+    console.log(resultBagi);
+  } catch (error) {
+    console.log(error.message);
+  }
 })();
 
 /**
@@ -76,6 +89,14 @@ import ari from './tasks/ari/index.js';
   } catch (error) {
     console.log(error.message);
   }
+  // Convert roman to integer
+  // Success
+  try {
+    const checkPalindrom = ari.checkPalindrom();
+    checkPalindrom;
+  } catch (error) {
+    console.log(error.message);
+  }
 })();
 
 /**
@@ -91,6 +112,18 @@ import virgil from './tasks/virgil/index.js';
   } catch (error) {
     console.log(error.message);
   }
+  try {
+    const calculate = virgil.countLetters('virgil');
+    console.log(calculate);
+  } catch (error) {
+    console.log(error.message);
+  }
+  try {
+    const calculate = virgil.countLetters('virgil');
+    console.log(calculate);
+  } catch (error) {
+    console.log(error.message);
+  }
 })();
 
 // Task Bian
@@ -99,6 +132,18 @@ import bian from './tasks/bian/index.js';
 (function taskBian() {
   try {
     console.log(bian.minutesToHours(180), 'Jam');
+  } catch (error) {
+    console.log(error.message);
+  }
+
+  try {
+    console.log(bian.squareArea(20));
+  } catch (error) {
+    console.log(error.message);
+  }
+
+  try {
+    console.log(bian.squareArea(20));
   } catch (error) {
     console.log(error.message);
   }
@@ -115,6 +160,27 @@ import ghifar from './tasks/ghifar/index.js';
   } catch (error) {
     console.log(error.message);
   }
+  try {
+    ghifar.triangle(5);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
+
+/*
+ * Task "Nugraha Panca Wibisana"
+ */
+
+// import your tasks here and run
+import wibi from './tasks/wibi/index.js';
+
+(function taskWibi() {
+  try {
+    const changes = wibi.sumAllArray(1, 2, 3, 4, '5', [1, 2, 3]);
+    console.log(changes);
+  } catch (error) {
+    console.log(error.message);
+  }
 })();
 
 /**
@@ -122,12 +188,20 @@ import ghifar from './tasks/ghifar/index.js';
  */
 
 // import your tasks here and run
+import adit from './tasks/adit/index.js';
 
 (function taksAdit() {
   // square-root
   try {
     const akar = adit.squareRoot(25);
-    console.log('\n', akar);
+    console.log(akar);
+  } catch (error) {
+    console.log(error.message);
+  }
+  // Failed
+  try {
+    const akarSalah = adit.celciusToFahrenheit('25');
+    console.log(akarSalah);
   } catch (error) {
     console.log(error.message);
   }
