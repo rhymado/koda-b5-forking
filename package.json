@@ -1,0 +1,16 @@
+{
+  "name": "koda-b5-forking",
+  "version": "1.0.0",
+  "description": "Latihan forking untuk koda batch 5",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "koda",
+    "b5",
+    "fork"
+  ],
+  "author": "Rhymado",
+  "license": "ISC"
+}
