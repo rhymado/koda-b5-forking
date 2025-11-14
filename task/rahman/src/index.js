@@ -1,5 +1,5 @@
-import { rupiahToDollar } from "./src/convertToDollar.js";
-import { dollarToRupiah } from "./src/convertToRupiah";
+import { rupiahToDollar } from "./convertToDollar.js";
+import { dollarToRupiah } from "./convertToRupiah.js";
 
 const func = {
   rupiahToDollar,
