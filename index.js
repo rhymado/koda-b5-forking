@@ -57,7 +57,22 @@ import hilmy from "./tasks/hilmy/index.js";
   } catch (error) {
     console.log(error.message);
   }
-})();
+
+  try {
+    const resultKali = hilmy.kali(4, 5);
+    console.log(resultKali);
+  } catch (error) {
+    console.log(error.message);
+  }
+
+  try {
+    const resultBagi = hilmy.bagi(20, 4);
+    console.log(resultBagi);
+  } catch (error) {
+    console.log(error.message);
+  }
+
+})(); 
 
 /**
  * Task "Ari Ramadhan"
