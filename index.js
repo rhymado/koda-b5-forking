@@ -42,11 +42,15 @@ import fakhri from "./tasks/fakhri/index.js";
  * Task "Muhammad Ghifar Ramdhani"
  */
 
-import  ghifar  from "./tasks/ghifar/index.js";
-try{
-  const cekOngkir = await ghifar.cekOngkir();
-  console.log(cekOngkir);
-}catch(error){
-  console.log(error);
-}
+import ghifar from "./tasks/ghifar/index.js";
+
+(async function taskGhifar() {
+  try {
+    const cekOngkir = await ghifar.cekOngkir();
+    console.log(cekOngkir);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
+
 
