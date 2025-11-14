@@ -57,8 +57,51 @@ import hilmy from "./tasks/hilmy/index.js";
   } catch (error) {
     console.log(error.message);
   }
-})(); 
+})();
 
+/**
+ * Task "Ari Ramadhan"
+ */
+
+import ari from "./tasks/ari/index.js";
+
+// Use IIFE here
+(function taskAri() {
+  // Convert roman to integer
+  // Success
+  try {
+    const romanToInt = ari.romanToInteger();
+    romanToInt;
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
+
+/**
+ * Task "Virgil"
+ */
+
+import virgil from "./tasks/virgil/index.js";
+
+(function taskVirgil() {
+  try {
+    const calculate = virgil.calcTotal(["apel", "pisang", "apel"]);
+    console.log(calculate);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
+
+// Task Bian
+import bian from "./tasks/bian/index.js";
+
+(function taskBian() {
+  try {
+    console.log(bian.minutesToHours(180), "Jam");
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
 /**
  * Task Ghifar
  */
