@@ -71,8 +71,7 @@ import hilmy from "./tasks/hilmy/index.js";
   } catch (error) {
     console.log(error.message);
   }
-
-})(); 
+})();
 
 /**
  * Task "Ari Ramadhan"
@@ -140,6 +139,11 @@ import ghifar from "./tasks/ghifar/index.js";
   try {
     const cekOngkir = await ghifar.cekOngkir();
     console.log(cekOngkir);
+  } catch (error) {
+    console.log(error.message);
+  }
+  try {
+    ghifar.triangle(5);
   } catch (error) {
     console.log(error.message);
   }
