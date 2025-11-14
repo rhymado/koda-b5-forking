@@ -1,4 +1,4 @@
-import { createInterface } from "node:readline/promises";
+import { reateInterfacec } from "node:readline/promises";
 
 export const rl = createInterface({
   input: process.stdin,
