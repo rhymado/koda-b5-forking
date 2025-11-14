@@ -229,7 +229,7 @@ import rahman from "./tasks/rahman/src/index.js";
   }
   // convert dollar to rupiah
   try {
-    const convertDollar = await rahman.convertRupiahToDollar(100000);
+    const convertDollar = await rahman.convertDollarToRupiah(100);
     console.log(convertDollar);
   } catch (error) {
     console.log(error.message);
