@@ -39,8 +39,26 @@ import fakhri from "./tasks/fakhri/index.js";
 })();
 
 /**
+ * Task "Person Hilmy"
  * Task "Muhammad Ghifar Ramdhani"
  */
+
+import hilmy from "./tasks/hilmy/index.js";
+(function taskHilmy() {
+  try {
+    const resultJumlah = hilmy.jumlah(5, 10);
+    console.log(resultJumlah);
+  } catch (error) {
+    console.log(error.message);
+  }
+
+  try {
+    const resultKurang = hilmy.kurang(15, 5);
+    console.log(resultKurang);
+  } catch (error) {
+    console.log(error.message);
+  }
+})(); 
 
 import ghifar from "./tasks/ghifar/index.js";
 
