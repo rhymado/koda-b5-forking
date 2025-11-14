@@ -39,7 +39,7 @@ import fakhri from "./tasks/fakhri/index.js";
 })();
 
 /**
- * Task "Person Name"
+ * Task "Person Hilmy"
  */
 
 import hilmy from "./tasks/hilmy/index.js";
