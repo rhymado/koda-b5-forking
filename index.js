@@ -71,8 +71,7 @@ import hilmy from "./tasks/hilmy/index.js";
   } catch (error) {
     console.log(error.message);
   }
-
-})(); 
+})();
 
 /**
  * Task "Ari Ramadhan"
@@ -87,6 +86,14 @@ import ari from "./tasks/ari/index.js";
   try {
     const romanToInt = ari.romanToInteger();
     romanToInt;
+  } catch (error) {
+    console.log(error.message);
+  }
+  // Convert roman to integer
+  // Success
+  try {
+    const checkPalindrom = ari.checkPalindrom();
+    checkPalindrom;
   } catch (error) {
     console.log(error.message);
   }
@@ -111,6 +118,12 @@ import virgil from "./tasks/virgil/index.js";
   } catch (error) {
     console.log(error.message);
   }
+  try {
+    const calculate = virgil.countLetters("virgil");
+    console.log(calculate);
+  } catch (error) {
+    console.log(error.message);
+  }
 })();
 
 // Task Bian
@@ -119,6 +132,18 @@ import bian from "./tasks/bian/index.js";
 (function taskBian() {
   try {
     console.log(bian.minutesToHours(180), "Jam");
+  } catch (error) {
+    console.log(error.message);
+  }
+
+  try {
+    console.log(bian.squareArea(20));
+  } catch (error) {
+    console.log(error.message);
+  }
+
+  try {
+    console.log(bian.squareArea(20));
   } catch (error) {
     console.log(error.message);
   }
@@ -135,6 +160,11 @@ import ghifar from "./tasks/ghifar/index.js";
   } catch (error) {
     console.log(error.message);
   }
+  try {
+    ghifar.triangle(5);
+  } catch (error) {
+    console.log(error.message);
+  }
 })();
 
 /*
@@ -148,6 +178,35 @@ import wibi from "./tasks/wibi/index.js";
   try {
     const changes = wibi.sumAllArray(1, 2, 3, 4, "5", [1, 2, 3]);
     console.log(changes);
+  } catch (error) {
+    console.log(error.message);
+  }
+
+  try {
+    const changes = wibi.findTheCapitals("NugRAHa PanCa WIBISANA");
+    console.log(changes);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
+
+/**
+ * Task "adit"
+ */
+
+// import your tasks here and run
+import adit from "./tasks/adit/index.js";
+
+(function taksAdit() {
+  // square-root
+  try {
+    const akar = adit.squareRoot(25);
+    console.log(akar);
+
+    const genap = adit.ganjilGenap(20);
+    console.log(genap);
+    const ganjil = adit.ganjilGenap(20);
+    console.log(ganjil);
   } catch (error) {
     console.log(error.message);
   }
@@ -173,4 +232,28 @@ import rahman from "./tasks/rahman/src/index.js";
   } catch (error) {
     console.log(error.message);
   }
+})();
+
+/*
+ * Task "Aska Diliyan Perkasa"
+ */
+
+// import your tasks here and run
+import aska from "./tasks/aska/index.js";
+(async function taskAska() {
+  try {
+    const pembagian = await aska.bagiTeam(12);
+    console.log(pembagian);
+  } catch (error) {
+    console.log(error);
+  }
+
+  try {
+    const pembagian = await aska.pembagian(10);
+    console.log(pembagian);
+  } catch (error) {
+    console.log(error);
+  }
+
+  
 })();
