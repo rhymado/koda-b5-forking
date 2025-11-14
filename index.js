@@ -135,18 +135,6 @@ import bian from "./tasks/bian/index.js";
   } catch (error) {
     console.log(error.message);
   }
-
-  try {
-    console.log(bian.squareArea(20));
-  } catch (error) {
-    console.log(error.message);
-  }
-
-  try {
-    console.log(bian.squareArea(20));
-  } catch (error) {
-    console.log(error.message);
-  }
 })();
 /**
  * Task Ghifar
@@ -181,35 +169,6 @@ import wibi from "./tasks/wibi/index.js";
   } catch (error) {
     console.log(error.message);
   }
-
-  try {
-    const changes = wibi.findTheCapitals("NugRAHa PanCa WIBISANA");
-    console.log(changes);
-  } catch (error) {
-    console.log(error.message);
-  }
-})();
-
-/**
- * Task "adit"
- */
-
-// import your tasks here and run
-import adit from "./tasks/adit/index.js";
-
-(function taksAdit() {
-  // square-root
-  try {
-    const akar = adit.squareRoot(25);
-    console.log(akar);
-
-    const genap = adit.ganjilGenap(20);
-    console.log(genap);
-    const ganjil = adit.ganjilGenap(20);
-    console.log(ganjil);
-  } catch (error) {
-    console.log(error.message);
-  }
 })();
 
 /*
@@ -219,9 +178,15 @@ import adit from "./tasks/adit/index.js";
 // import your tasks here and run
 import rahman from "./tasks/rahman/src/index.js";
 
-(function taskRahman() {
+(async function taskRahman() {
   try {
-    const convertRp = rahman.convertRupiahToDollar(100000);
+    const convertRp = await rahman.convertRupiahToDollar(100000);
+    console.log(convertRp);
+  } catch (error) {
+    console.log(error.message);
+  }
+  try {
+    const convertRp = await rahman.convertDollarToRupiah(100);
     console.log(convertRp);
   } catch (error) {
     console.log(error.message);
@@ -241,13 +206,4 @@ import aska from "./tasks/aska/index.js";
   } catch (error) {
     console.log(error);
   }
-
-  try {
-    const pembagian = await aska.pembagian(10);
-    console.log(pembagian);
-  } catch (error) {
-    console.log(error);
-  }
-
-  
 })();

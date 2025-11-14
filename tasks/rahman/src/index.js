@@ -1,9 +1,9 @@
 import { convertRupiahToDollar} from "./convertToDollar.js";
-//import { convertDollarToRupiah } from "./convertToRupiah.js";
+import { convertDollarToRupiah } from "./convertToRupiah.js";
 
 const func = {
-  convertRupiahToDollar//,
-  //convertDollarToRupiah
+  convertRupiahToDollar,
+  convertDollarToRupiah
 };
 
 export default func;
