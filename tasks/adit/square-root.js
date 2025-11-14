@@ -3,7 +3,7 @@ export function squareRoot(inputAkar) {
   for (let i = 0; i < 10; i++) {
     x = 0.5 * (x + inputAkar / x);
   }
-  console.log(x);
+  return x;
 }
 
 // squareRoot(25);

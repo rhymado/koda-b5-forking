@@ -1,4 +1,4 @@
-import { squareRoot } from './square-root';
+import { squareRoot } from './square-root.js';
 
 const func = {
   squareRoot,
