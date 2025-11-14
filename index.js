@@ -39,7 +39,9 @@ import fakhri from "./tasks/fakhri/index.js";
 })();
 
 /**
- * Task "Person Name"
+ * Task "Virgil I Ambar"
  */
 
-// import your tasks here and run
+import { calcTotal, belanja } from "./tasks/virgil/calculateAllPrice.js";
+
+calcTotal(belanja);
