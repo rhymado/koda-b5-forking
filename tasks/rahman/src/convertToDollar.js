@@ -17,7 +17,7 @@ export async function convertRupiahToDollar(answer){
     if(typeof rupiah === "number"){
         console.log(`invalid input`);
     }
-      let convert =  rupiah.rupiahToDollar;
+      let convert =  rupiahToDollar(rupiah);
       console.log(`$ ${convert}`); 
       rl.close();
   }catch(error){
