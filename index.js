@@ -130,6 +130,12 @@ import bian from "./tasks/bian/index.js";
   } catch (error) {
     console.log(error.message);
   }
+
+   try {
+    console.log(bian.squareArea(20));
+  } catch (error) {
+    console.log(error.message);
+  }
 })();
 /**
  * Task Ghifar
