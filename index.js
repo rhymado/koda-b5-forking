@@ -75,3 +75,14 @@ import hilmy from "./tasks/hilmy/index.js";
 })(); 
 
 // import your tasks here and run
+
+// Task Bian
+import bian from "./tasks/bian/index.js";
+
+(function taskBian() {
+  try {
+    console.log(bian.minutesToHours(180), "Jam");
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
