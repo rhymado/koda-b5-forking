@@ -40,6 +40,84 @@ import adit from './tasks/adit/index.js';
 })();
 
 /**
+ * Task "Person Hilmy"
+ */
+
+import hilmy from './tasks/hilmy/index.js';
+(function taskHilmy() {
+  try {
+    const resultJumlah = hilmy.jumlah(5, 10);
+    console.log(resultJumlah);
+  } catch (error) {
+    console.log(error.message);
+  }
+
+  try {
+    const resultKurang = hilmy.kurang(15, 5);
+    console.log(resultKurang);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
+
+/**
+ * Task "Ari Ramadhan"
+ */
+
+import ari from './tasks/ari/index.js';
+
+// Use IIFE here
+(function taskAri() {
+  // Convert roman to integer
+  // Success
+  try {
+    const romanToInt = ari.romanToInteger();
+    romanToInt;
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
+
+/**
+ * Task "Virgil"
+ */
+
+import virgil from './tasks/virgil/index.js';
+
+(function taskVirgil() {
+  try {
+    const calculate = virgil.calcTotal(['apel', 'pisang', 'apel']);
+    console.log(calculate);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
+
+// Task Bian
+import bian from './tasks/bian/index.js';
+
+(function taskBian() {
+  try {
+    console.log(bian.minutesToHours(180), 'Jam');
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
+/**
+ * Task Ghifar
+ */
+import ghifar from './tasks/ghifar/index.js';
+
+(async function taskGhifar() {
+  try {
+    const cekOngkir = await ghifar.cekOngkir();
+    console.log(cekOngkir);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
+
+/**
  * Task "adit"
  */
 
@@ -49,14 +127,7 @@ import adit from './tasks/adit/index.js';
   // square-root
   try {
     const akar = adit.squareRoot(25);
-    console.log(akar);
-  } catch (error) {
-    console.log(error.message);
-  }
-  // Failed
-  try {
-    const akarSalah = adit.celciusToFahrenheit('25');
-    console.log(akarSalah);
+    console.log('\n', akar);
   } catch (error) {
     console.log(error.message);
   }
