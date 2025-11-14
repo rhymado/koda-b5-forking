@@ -40,7 +40,6 @@ import fakhri from "./tasks/fakhri/index.js";
 
 /**
  * Task "Person Hilmy"
- * Task "Muhammad Ghifar Ramdhani"
  */
 
 import hilmy from "./tasks/hilmy/index.js";
@@ -60,6 +59,9 @@ import hilmy from "./tasks/hilmy/index.js";
   }
 })(); 
 
+/**
+ * Task Ghifar
+ */
 import ghifar from "./tasks/ghifar/index.js";
 
 (async function taskGhifar() {
