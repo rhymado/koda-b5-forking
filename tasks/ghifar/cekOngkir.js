@@ -15,22 +15,19 @@ export async function cekOngkir() {
     switch (inputKendaraan) {
       case "a":
         let mobil = jarak * 5e3;
-        console.log(`ongkir mobil: Rp.${mobil}`);
-        rl.close();
+        return `ongkir mobil: Rp.${mobil}`;
         break;
       case "b":
         let motor = jarak * 3e3;
-        console.log(`ongkir motor: Rp.${motor}`);
-        rl.close();
+        return`ongkir motor: Rp.${motor}`;
         break;
     }
   } catch (error) {
-    console.log(error);
+    return error
   } finally {
     rl.close();
   }
 }
-
 
 // const answer = await rl.question('What is your favorite food? ');
 // console.log(`Oh, so your favorite food is ${answer}`);

@@ -39,7 +39,14 @@ import fakhri from "./tasks/fakhri/index.js";
 })();
 
 /**
- * Task "Person Name"
+ * Task "Muhammad Ghifar Ramdhani"
  */
 
-// import your tasks here and run
+import  ghifar  from "./tasks/ghifar/index.js";
+try{
+  const cekOngkir = await ghifar.cekOngkir();
+  console.log(cekOngkir)
+}catch(error){
+  console.log(error)
+}
+
