@@ -102,3 +102,18 @@ import bian from "./tasks/bian/index.js";
     console.log(error.message);
   }
 })();
+/**
+ * Task Ghifar
+ */
+import ghifar from "./tasks/ghifar/index.js";
+
+(async function taskGhifar() {
+  try {
+    const cekOngkir = await ghifar.cekOngkir();
+    console.log(cekOngkir);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
+
+
