@@ -1,8 +1,7 @@
-import calcTotal, { belanja } from "./calculateAllPrice.js";
+import { calcTotal } from "./calculateAllPrice.js";
 
 const func = {
   calcTotal,
-  belanja,
 };
 
 export default func;
