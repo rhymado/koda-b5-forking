@@ -57,6 +57,6 @@ import hilmy from "./tasks/hilmy/index.js";
   } catch (error) {
     console.log(error.message);
   }
-})(); 
+})();
 
 // import your tasks here and run
