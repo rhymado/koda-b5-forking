@@ -71,11 +71,6 @@ import ghifar from "./tasks/ghifar/index.js";
   } catch (error) {
     console.log(error.message);
   }
-  try {
-    ghifar.trianggel(5);
-  } catch (error) {
-    console.log(error.message);
-  }
 })();
 
 
