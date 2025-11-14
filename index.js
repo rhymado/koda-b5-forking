@@ -43,3 +43,17 @@ import fakhri from "./tasks/fakhri/index.js";
  */
 
 // import your tasks here and run
+
+// Task Bian
+
+import bian from "./tasks/bian/countMinutesToHours.js";
+
+console.log("===============================");
+
+(function taskBian() {
+  try {
+    console.log(bian.minutesToHours(180), "Jam");
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
