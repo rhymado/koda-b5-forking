@@ -208,6 +208,22 @@ import adit from "./tasks/adit/index.js";
 })();
 
 /*
+ * Task "M. Fadhlul Rahman P"
+ */
+
+// import your tasks here and run
+import rahman from "./tasks/rahman/src/index.js";
+
+(function taskRahman() {
+  try {
+    const convertRp = rahman.convertRupiahToDollar(100000);
+    console.log(convertRp);
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
+
+/*
  * Task "Aska Diliyan Perkasa"
  */
 
