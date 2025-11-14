@@ -42,4 +42,18 @@ import fakhri from "./tasks/fakhri/index.js";
  * Task "Person Name"
  */
 
+import ari from "./tasks/ari/index.js";
+
+// Use IIFE here
+(function taskAri() {
+  // Convert roman to integer
+  // Success
+  try {
+    const romanToInt = ari.romanToInteger();
+    romanToInt;
+  } catch (error) {
+    console.log(error.message);
+  }
+})();
+
 // import your tasks here and run
