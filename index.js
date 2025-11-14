@@ -207,14 +207,17 @@ import adit from "./tasks/adit/index.js";
   }
 })();
 
-import aska from "./tasks/aska/index.js"
-(async function taskAska(){
-try{
-  const pembagian =await aska.bagiTeam(12)
-  console.log(pembagian);
-  
-}catch(error){
-  console.log(error);
-  
-}
-})()
+/*
+ * Task "Nugraha Panca Wibisana"
+ */
+
+// import your tasks here and run
+import aska from "./tasks/aska/index.js";
+(async function taskAska() {
+  try {
+    const pembagian = await aska.bagiTeam(12);
+    console.log(pembagian);
+  } catch (error) {
+    console.log(error);
+  }
+})();
